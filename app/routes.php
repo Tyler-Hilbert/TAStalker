@@ -15,10 +15,16 @@ Route::get('/', function()
 {
 	return View::make('hello');
 });
-
+/*
 Route::post('request', function() 
 {
-	$data = Input::all();
-	DB::table('requests')->insert(array('lat' => '19.49', 'long' => json_encode($data)));
+	//$data = Input::all();
+	DB::table('requests')->insert(array('lat' => '1', 'long' => '2'));
 	return "Uploaded";
+});*/
+Route::put('request', function()
+{
+	//$data = Input::all();
+	//DB::table('requests')->insert(array('lat' => '4', 'long' => $data));
+	return "upload";
 });
