@@ -1,6 +1,3 @@
-<?php
-	DB::table('requests')->insert(array('lat' => '19.49', 'long' => '43.11'));
-?>
 <!doctype html>
 <html lang="en">
 <head>
