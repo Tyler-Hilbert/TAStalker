@@ -16,4 +16,9 @@ Route::get('/', function()
 	return View::make('hello');
 });
 
-Route::post('request', 'RequestController@store');
+Route::post('request', function() 
+{
+	$data = Input::all();
+	DB::table('requests')->insert(array('lat' => '19.49', 'long' => json_encode($data)));
+	return "Uploaded";
+});
